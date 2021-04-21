@@ -1,0 +1,143 @@
+@mixin desktop-screens(){
+	@media screen and (min-width:960px) and (max-width:1200px){
+		@content;
+	}
+}
+@mixin tablet-screens(){
+	@media screen and (min-width:768px) and (max-width:959px){
+		@content;
+	}
+}
+@mixin tablet-vertical-screens(){
+	@media screen and (min-width:600px) and (max-width:767px){
+		@content;
+	}
+}
+@mixin mobile-screens(){
+	@media screen and (max-width:599px){
+		@content;
+	}
+}
+
+@mixin rounded-cta($radius:50%, $background:$theme-color){
+	border-radius: $radius;
+	background: $background;
+	height: 130px;
+    width: 130px;
+    line-height: 130px;
+    display: block;
+    text-align: center;
+    float: left;
+    color: #fff;
+    margin: 0px 20px 0px 0px;
+    text-decoration: none;
+    font-size: 14px;
+}
+@mixin footer-icon{
+	font-family: "FontAwesome";
+    font-size: 30px;
+    background: #61D0D4;
+    padding: 17px 14px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+@mixin element-to-animate {
+    width: 0px;
+    height: 0px;
+    border:2px solid #E83556;
+    transition: height 2s;
+    -webkit-transition: height 2s;
+    -moz-transition: height 2s;
+    -ms-transition: height 2s;
+    -o-transition:  height 2s;   
+    margin: 0 auto;
+}
+@mixin gallery-stamp{
+    height: auto;
+    padding: 8px;
+    border: 1px solid #f1f1f1;
+    -webkit-box-shadow: 2px -2px 5px 0px #7c765f;
+    -moz-box-shadow: 2px -2px 5px 0px #7c765f;
+    box-shadow: 2px -2px 5px 0px #7c765f;
+    background: #f5f4f4;
+    position: relative;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+@mixin overlay{
+    position: absolute;
+    padding: 0 20px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.15s linear;
+    -moz-transition: all 0.15s linear;
+    -ms-transition: all 0.15s linear;
+    -o-transition: all 0.15s linear;
+    transition: all 0.15s linear;
+}
+@mixin textarea{
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px dotted #4d4d4d;
+    font-family: $text-font;
+}
+@mixin greyOverlay{
+    opacity : 0.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    z-index: 5000;
+    display:none;
+}
+@mixin device-bg-position{
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; 
+}
+@mixin desktop-screenshot{
+    height: 70%;
+    left: 15%;
+    top: 5%;
+    width: 68%;
+    position:absolute;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: background-position .6s ease-out;
+}   
+
+@mixin tablet-screenshot{
+    height: 50%;
+    left: 2%;
+    top: 40%;
+    width: 30%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: background-position .6s ease-out;
+}
+@mixin phone-screenshot{
+    background-position: 0 100%;
+    bottom: 8%;
+    height: 30%;
+    left: auto;
+    right: 8%;
+    top: auto;
+    width: 12%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: background-position .6s ease-out;
+}

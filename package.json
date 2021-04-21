@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "This is portfolio Repo",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sushma-jadhav/portfolio.git"
+  },
+  "author": "Sushma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sushma-jadhav/portfolio/issues"
+  },
+  "homepage": "https://github.com/sushma-jadhav/portfolio#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
