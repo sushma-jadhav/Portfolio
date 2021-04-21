@@ -479,7 +479,7 @@ artical{
     }
   }
   .fa-arrow-circle-right:before {
-    @extend .fa-arrow-circle-left:before;
+    @extend .fa-arrow-circle-left;
     padding-left:10px;
   }
 
